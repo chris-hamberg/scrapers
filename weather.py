@@ -2,7 +2,7 @@
 author : Chris Hamberg
 program: Stream Weather Forecast into Terminal
 
-github  : https://github.com/morphine-html/
+github  : https://github.com/chris-hamberg/
 facebook: https://www.facebook.com/chris.hamberg.1
 
 usage   : search for your local forecast at accuweather

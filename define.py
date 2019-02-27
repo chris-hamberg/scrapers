@@ -1,7 +1,7 @@
 '''
 Author: Chris Hamberg
 Facebook: https://www.facebook.com/chris.hamberg.1
-Github: https://github.com/morphine-html/
+Github: https://github.com/chris-hamberg/
 install file creates user config bash alias "define" if it doesnt exist
 on linux only
 other os have to use cmd line interface as normal python script

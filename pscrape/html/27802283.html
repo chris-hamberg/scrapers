@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>List of prime numbers up to 1000000000000</title>
+	<meta name="Description" content="List of prime numbers up to 1000 billion (12-digit number)">
+	<meta name="Keywords" content="prime numbers list, sieve of eratosthenes, sieve of atkin, sieve, eratosthenes, atkin, eratosthenes in java, atkin in java, prime numbers, cpas, composants associes">
+	<meta name="Author" content="Les composants associes">
+	<meta http-equiv="Content-Language" content="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Pragma" content="no-cache">
+
+	<link href="../../style/style.css" rel="stylesheet" type="text/css">
+	<script data-ad-client="ca-pub-7171138480119779" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script src="../../script/script.js" type="text/javascript"></script>
+</head>
+<body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AnnonceHorizontal -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7171138480119779"
+     data-ad-slot="6389278176"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+	<td>&nbsp;</td>
+	<td width="95%" align="center">
+		<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+	<td>
+		<ul id="onglet">
+			<li><a href="accueil_en.php">Home</a></li><li class="actif"><a href="liste_online_en.php">Prime numbers list</a></li><li><a href="eratosthene_en.php">Eratosthenes</a></li><li><a href="atkin_en.php">Atkin</a></li><li><a href="division_en.php">Trial division</a></li><li><a href="euclide_en.php">Euclidean division</a></li><li><a href="onzeweb_en.php">Web</a></li><li><a href="donate_en.php">Donate</a></li>		</ul>
+	</td>
+	<td width="1%" align="right" style="vertical-align:top" rowspan="2"><img src="../../img/prime.gif" border="0" alt="logo prime i.t."/></td>
+	<td width="1%">
+		<span id="titreSite">Prime&nbsp;I.T.</span>
+	</td>
+</tr>
+<tr style="line-height:5px" align="right">
+	<td style="font-size:7pt">
+		Help Prime I.T. :		<img src="../../img/bitcoin-icon.jpg" border="0" alt=""/>
+		<a onclick="openModal('coinModalId');return false;" href="#">Bitcoin</a>
+		<img src="../../img/litecoin-icon.jpg" border="0" alt=""/>
+		<a onclick="openModal('coinModalId');return false;" href="#">Litecoin</a>
+		<img src="../../img/dodgecoin-icon.jpg" border="0" alt=""/>
+		<a onclick="openModal('coinModalId');return false;" href="#">Dodgecoin</a>
+	</td>
+	<td><a href="liste_online.php" style="font-size:7pt">
+	<img src="../../img/fr.gif" width="13px" height="7px" border="0" alt=""/>
+	Version Française
+</a>
+</td>
+</tr>
+</table>
+
+<div id="coinModalId" class="modal"><div>
+	<div style="text-align:left;">
+		If you find this site interesting, it has learned you 2-3 tips, may be it made you laugh or cry (uh?). Please support it by sending us some coin at the following three addresses, thank you.	</div><br/>
+
+	<span>
+		<img src="../../img/bitcoin.png" border="0" alt="Bitcoin icon"/>
+		Bitcoin adress	</span><br/>
+	<input onclick="this.select()" readonly="readonly" type="text" value="1289aC81Lw6sce3S2eaev3pxuHxmBN1Wbo" style="width:290px"/><br/><br/>
+
+	<span>
+		<img src="../../img/litecoin.png" border="0" alt="Litecoin icon"/>
+		Litecoin adress	</span><br/>
+	<input onclick="this.select()" readonly="readonly" type="text" value="LVnatyNoPL5kRz8qkeFDGGx8Gw198aVkM7" style="width:290px"/><br/><br/>
+
+	<span>
+		<img src="../../img/dodgecoin.png" border="0" alt="Litecoin icon"/>
+		Dodgecoin adress	</span><br/>
+	<input onclick="this.select()" readonly="readonly" type="text" value="DTyXrfEb4gtmJdTNAbRuDokZBGd9LM9SYb" style="width:290px"/><br/><br/>
+
+	<div style="text-align:right;margin-top:2px">
+		<a id="button" onclick="closeModal('coinModalId');return false;" href="#">Close</a>
+	</div>
+</div></div>		<div id="block">
+			<h1>Online prime numbers list</h1>
+						
+			<form action="liste_online_en.php" method="post">
+				<div style="position:relative;margin-top:9px;margin-bottom:9px;">
+					<span style="position:absolute;left:0;font-weight: bold;">
+						List of prime numbers up to 1 000 000 000 000 (1000 billion)
+					</span>
+					&nbsp;
+					<span style="position:absolute;right:0">
+						Prime number per page&nbsp;:&nbsp;
+						<select name='primePageInput'>
+						<option value='100'>100</option><option selected='selected' value='200'>200</option><option value='300'>300</option><option value='600'>600</option>						</select>
+						&nbsp;&nbsp;
+						<a id="button" href="liste_export.php">Export as text</a>
+					</span>
+				</div>
+			
+				Number : <input type='text' name='numberInput' value='27802283' maxlength="12" />
+				<input type='submit' name='firstButton' value='search' />
+				<div style="display:inline-block;width:30px">&nbsp;</div>
+				<input type='submit' name='centerButton' value='middle' />
+				<input type='submit' name='lastButton' value='last' />
+				&nbsp;&nbsp;
+
+				<br/><br/>
+				<div style="position:relative;margin-bottom:9px;">
+					<input style="position:absolute;left:20px" type='submit' name='previousButton' value='previous page' />
+					&nbsp;
+					<input style="position:absolute;right:20px" type='submit' name='nextButton' value='next page' />
+				</div>
+
+				<input type='hidden' name='firstPrimeHidden' value='27802283' />
+				<input type='hidden' name='lastPrimeHidden' value='27805847' />
+
+				<table width="100%" style="font-size:8pt;text-align:center">
+<tr>
+	<td><u><b>27802283</b></u></td><td>27802297</td><td>27802337</td><td>27802351</td><td>27802367</td><td>27802373</td><td>27802403</td><td>27802409</td><td>27802417</td><td>27802433</td></tr>
+<tr><td>27802447</td><td>27802451</td><td>27802457</td><td>27802471</td><td>27802487</td><td>27802493</td><td>27802499</td><td>27802513</td><td>27802543</td><td>27802571</td></tr>
+<tr><td>27802583</td><td>27802589</td><td>27802603</td><td>27802609</td><td>27802613</td><td>27802627</td><td>27802673</td><td>27802679</td><td>27802711</td><td>27802717</td></tr>
+<tr><td>27802721</td><td>27802727</td><td>27802729</td><td>27802741</td><td>27802777</td><td>27802787</td><td>27802823</td><td>27802829</td><td>27802843</td><td>27802847</td></tr>
+<tr><td>27802889</td><td>27802921</td><td>27802927</td><td>27802933</td><td>27802963</td><td>27802969</td><td>27802979</td><td>27802981</td><td>27802993</td><td>27803029</td></tr>
+<tr><td>27803071</td><td>27803077</td><td>27803081</td><td>27803117</td><td>27803131</td><td>27803147</td><td>27803161</td><td>27803189</td><td>27803227</td><td>27803239</td></tr>
+<tr><td>27803267</td><td>27803351</td><td>27803353</td><td>27803357</td><td>27803383</td><td>27803407</td><td>27803443</td><td>27803467</td><td>27803471</td><td>27803491</td></tr>
+<tr><td>27803507</td><td>27803509</td><td>27803519</td><td>27803543</td><td>27803561</td><td>27803569</td><td>27803603</td><td>27803647</td><td>27803719</td><td>27803723</td></tr>
+<tr><td>27803759</td><td>27803771</td><td>27803791</td><td>27803801</td><td>27803827</td><td>27803851</td><td>27803873</td><td>27803887</td><td>27803903</td><td>27803917</td></tr>
+<tr><td>27803947</td><td>27803957</td><td>27803969</td><td>27803977</td><td>27803999</td><td>27804017</td><td>27804019</td><td>27804067</td><td>27804071</td><td>27804143</td></tr>
+<tr><td>27804149</td><td>27804157</td><td>27804169</td><td>27804173</td><td>27804209</td><td>27804211</td><td>27804221</td><td>27804233</td><td>27804251</td><td>27804269</td></tr>
+<tr><td>27804289</td><td>27804317</td><td>27804319</td><td>27804341</td><td>27804347</td><td>27804389</td><td>27804407</td><td>27804409</td><td>27804431</td><td>27804433</td></tr>
+<tr><td>27804451</td><td>27804457</td><td>27804461</td><td>27804463</td><td>27804473</td><td>27804509</td><td>27804547</td><td>27804559</td><td>27804563</td><td>27804583</td></tr>
+<tr><td>27804599</td><td>27804629</td><td>27804641</td><td>27804643</td><td>27804653</td><td>27804659</td><td>27804661</td><td>27804691</td><td>27804709</td><td>27804727</td></tr>
+<tr><td>27804731</td><td>27804743</td><td>27804773</td><td>27804781</td><td>27804793</td><td>27804811</td><td>27804817</td><td>27804841</td><td>27804851</td><td>27804863</td></tr>
+<tr><td>27804869</td><td>27804899</td><td>27804901</td><td>27804937</td><td>27804941</td><td>27805007</td><td>27805031</td><td>27805049</td><td>27805051</td><td>27805097</td></tr>
+<tr><td>27805111</td><td>27805117</td><td>27805123</td><td>27805139</td><td>27805157</td><td>27805181</td><td>27805213</td><td>27805237</td><td>27805273</td><td>27805279</td></tr>
+<tr><td>27805301</td><td>27805307</td><td>27805313</td><td>27805361</td><td>27805363</td><td>27805373</td><td>27805381</td><td>27805423</td><td>27805429</td><td>27805433</td></tr>
+<tr><td>27805439</td><td>27805441</td><td>27805451</td><td>27805487</td><td>27805501</td><td>27805541</td><td>27805559</td><td>27805567</td><td>27805619</td><td>27805621</td></tr>
+<tr><td>27805633</td><td>27805637</td><td>27805663</td><td>27805733</td><td>27805753</td><td>27805783</td><td>27805807</td><td>27805819</td><td>27805823</td><td>27805847</td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+				<div style="position:relative;margin-bottom:9px;">
+					<input style="position:absolute;left:20px" type='submit' name='previousButton' value='previous page' />
+					&nbsp;
+					<input style="position:absolute;right:20px" type='submit' name='nextButton' value='next page' />
+				</div>
+			</form>
+		</div>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+<div id='basPageLong'><div id="basPage"><i>
+A website created by<a href='javascript:melMe();' title='Les composants associés (cpas)' style='text-decoration:none;'>
+	<span style='border-bottom: solid 1px blue;'>
+		Les composants associés (cpas)	</span>
+	<img src='../../img/lcpas2020.gif' width='13px' height='13px' border=0 alt="logo cpas">
+</a>
+</i></div>
+</div></body>
+</html>
